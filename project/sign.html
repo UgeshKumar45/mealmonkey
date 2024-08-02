@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealMonkey</title>
+    <link rel="stylesheet" href="sign.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <img src="mealpro.png" alt="MealMonkey">
+        <h2 class="MealMonkey">MealMonkey</h2>
+        <nav class="navigation">
+            <a href="home.html">home</a> 
+            <a href="#">About</a>
+            <a href="#">Contact</a> 
+            <a href="login.html">Login</a>
+            <a href="sign.html">Sign</a>
+            <a href="#">Admin</a>
+        </nav>
+
+        <div class="searchbox">
+            <input type="search" placeholder="search here">
+            <span class="fafasearch"><ion-icon name="search-outline"></ion-icon></span>
+            </input>
+        </div>
+        <div class="cart">
+            <span class="cart-cart"><ion-icon name="cart-outline"></ion-icon></span>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <div id="main-container">
+        <div id="form-container">
+            <div id="content">
+                <span class="title-text">SignUp</span>
+                <form id="login-form">
+                    <div class="field">
+                        <input required="" type="text">
+                        <label>FirstName</label>
+                    </div>
+                    <div class="field">
+                        <input required="" type="text">
+                        <label>LastName</label>
+                    </div>
+                    <div class="field">
+                        <input required="" type="email">
+                        <label>Email</label>
+                    </div>
+                    <div class="field">
+                        <input required="" type="text">
+                        <label>Phone</label>
+                    </div>
+                    <div class="field">
+                        <input required="" type="password">
+                        <label>Password</label>
+                    </div>
+                    <div class="field">
+                        <input required="" type="password">
+                        <label>Confirm Password</label>
+                    </div>
+                    <div id="action">
+                        <label><input type="checkbox">Remember me</label>
+                    </div>
+                    <button id="login">SignUp</button>
+                    <div id="signup">Already a Member?
+                        <a href="login.html" class="sign">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
