@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background:url('Signup.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    
+}
+
+header img{
+    width: 70px;
+    height: 70px;
+    position:absolute ;
+    left: 35px;
+}
+
+.MealMonkey{
+    font-size: 2em;
+    color: orange;
+    user-select: none;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: red;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform -5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.cart{
+    color: orangered;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    right: 30px;
+}
+
+.cart-cart{
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.cart-count{
+    position: absolute;
+    top: -10px;
+    background: yellow;
+    right: 0;
+    padding: 2px;
+    height: 20px;
+    width: 20px;
+    line-height:20px ;
+    border-radius: 50%;
+    z-index: 99;
+}
+.searchbox{
+    position: relative;
+    padding: 0%;
+    width: 260px;
+    height: 30px;
+    margin-left: 30px;
+}
+.searchbox input{
+    border-radius: 20px;
+    width: 260px;
+    height: 30px;
+}
+
+.fafasearch{
+    color: #030303;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+#main-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+#form-container{
+    position: relative;
+    display: flex;
+}
+#contane{
+    border: solid 1px #626262c2;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+    /* backdrop-filter: blur(60px); */
+}
+input:focus {
+    outline: none;
+}
+.title-page{
+    text-align: center;
+    color: white;
+}
+.admin-login{
+    position: relative;
+}
+.admin-login label{
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 5px;
+    z-index: -1;
+    transition: 0.3s;
+}
+.admin-login input{
+    color: white;
+    border: 0px;
+    border-bottom: solid 1px #3f3f3f;
+    margin-top: 32px;
+    padding: 5px 0px;
+    background: none;
+    width: 100%;
+}
+.admin-login input:focus+label,
+.admin-login input:valid+label {
+    bottom: 25px;
+    font-size: 13px; 
+}
+.admin-login label{
+    display: flex;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+.login{
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #ffffff;
+    transition: .3s; 
+}
+.login:hover  {
+    transform: scale(0.9);
+}
+
+.admin-login input{
+    margin-right: 3px;
+    cursor: pointer;
+}
